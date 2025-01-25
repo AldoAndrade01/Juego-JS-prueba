@@ -7,8 +7,15 @@
 }
 
 footer{
+    color:black;
     text-align: center;
     padding: 10px;
+}
+
+button{
+    background-color:rgb(84, 170, 95);
+    border: 2px solid black;
+    margin: 2px;
 }
 
 .container{
@@ -16,7 +23,7 @@ footer{
     height: 100vh;
     max-height: 745px;
     margin: 0 auto;
-    background-color:deepskyblue;
+    background-color:rgb(24, 107, 56);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,9 +37,16 @@ h1 {
     padding: 20px;
 }
 
-.start-text{
-    font-size: 26px;
+#result{
     text-align: center;
+}
+
+#result > img{
+    width: 35%;
+}
+
+#start-text{
+    font-size: 26px;
     padding: 20px;
 }
 
