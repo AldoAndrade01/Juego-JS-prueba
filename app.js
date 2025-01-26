@@ -6,6 +6,7 @@ const TIE = 0;
 const WIN = 1;
 const LOSE = 2;
 
+//Extraer las variables del HTML
 const rockbtn = document.getElementById('rock');
 const paperbtn = document.getElementById('paper');
 const scissorsbtn = document.getElementById('scissors');
@@ -14,6 +15,7 @@ const resultText = document.getElementById('start-text');
 const userImg = document.getElementById('userimg');
 const machineImg = document.getElementById('machineimg');
 
+//Agregar eventos a los botones
 rockbtn.addEventListener("click", () => {
     play(ROCK);
 });
@@ -26,10 +28,12 @@ scissorsbtn.addEventListener("click", () => {
     play(SCISSORS);
 });
 
+//Función para jugar cuando se presiona un botón
 function play(userOption){
     userImg.src = "img/" + userOption + ".svg";
-    resultText.innerHTML = "Waiting for the machine...";
+    resultText.innerHTML = "Waiting for the machine..."; //Texto de espera
 
+    //Animación de la máquina
     const interval = setInterval(function(){
         const machineOption = calMachineOption();
         machineImg.src = "img/" + machineOption + ".svg";
@@ -57,7 +61,8 @@ function play(userOption){
     }, 2000);
 
 }
-
+ 
+//Función para calcular el resultado
 function calculateResult(userOption, machineOption){
     if(userOption === machineOption){
         return TIE;
@@ -72,6 +77,7 @@ function calculateResult(userOption, machineOption){
     }
 }
 
+//Función para calcular la opción de la máquina, pasando las variables a constantes
 function calMachineOption(){
     const number = Math.floor(Math.random() * 3);
     switch(number){
