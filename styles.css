@@ -6,14 +6,24 @@
     font-family: sans-serif;
 }
 
+#tmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(206, 206, 206);
+    text-shadow: -1px -1px 0 black, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 footer{
-    color:black;
-    text-align: center;
+    color: white;
+    font-size: 13px;
+    text-align: right;
     padding: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 button{
-    background-color:rgb(84, 170, 95);
+    background-color:rgb(206, 206, 206);
     border: 2px solid black;
     margin: 2px;
 }
@@ -23,7 +33,7 @@ button{
     height: 100vh;
     max-height: 745px;
     margin: 0 auto;
-    background-color:rgb(24, 107, 56);
+    background-color:rgb(38, 182, 139);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,6 +58,8 @@ h1 {
 #start-text{
     font-size: 26px;
     padding: 20px;
+    color: rgb(206, 206, 206);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #group-btn{
